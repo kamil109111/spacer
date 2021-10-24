@@ -11,20 +11,11 @@
   &__description {
     font-weight: 300;
     text-align: center;
-  }
-  &__img{
-      width: 200px;
-      height: 200px;
-  }
-  &__result {
-    margin: 24px;
-    display: grid;
-    column-gap: 24px;
-    row-gap: 24px;    
-    grid-template-columns: 1fr 1fr 1fr;
-  }
+  }  
   &__title {
     font-weight: 900;
     font-size: 52px;
   }
 }
+
+
