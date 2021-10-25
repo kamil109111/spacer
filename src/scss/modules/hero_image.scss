@@ -1,12 +1,13 @@
 .hero-image {
-  background-image: url("../assets/img/space-background.jpg");
+  background-image: url("../assets/img/moon.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-attachment: scroll;
-  background-size: cover;   
+  background-attachment: fixed;
+  background-size: cover;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+ 
 }

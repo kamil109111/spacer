@@ -1,8 +1,10 @@
 @import "~normalize.css";
+@import "~animate.css";
 @import "_variables";
 @import "modules/search.scss";
 @import "modules/images.scss";
 @import "modules/hero_image.scss";
+@import "modules/input.scss";
 
 body {  
   color: #fff; 

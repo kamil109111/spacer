@@ -5,9 +5,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 448px;
+  max-width: 448px;
   padding: 24px;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.1);
+  &__button{
+    margin-top: 16px;
+  }
   &__description {
     font-weight: 300;
     text-align: center;
@@ -16,6 +19,33 @@
     font-weight: 900;
     font-size: 52px;
   }
+  &-value{
+    color: white;
+    text-align: center;
+    height: 30px;
+    border: 0;
+    background: none;
+    border-bottom: 1px solid white;
+    
+    &::placeholder{
+      color: white;
+      text-align: center;
+    }
+    &:focus{
+     outline: none;
+     box-shadow: 0 20px 20px -8px rgba(255, 255, 255, 1);
+    }
+  }
 }
 
-
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+ display: none;
+}
