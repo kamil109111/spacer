@@ -20,22 +20,38 @@
 
   <body>
     <div class="hero-image hero--js">
-    <div class="search">
-      <h1 class="search__title">SPACER</h1>
-      <p class="search__description">
-        Begin your journey through our amazing galaxy and discover places you
-        never even heard of.
-      </p>
-      <p class="search__description">Type anything space-related to start</p>      
-        <input class="search-value search-value--js" type="text" placeholder="e.g Moon"/>
-        <button class="search__button search-button--js">Search</button>      
-    </div>
+      <div class="search">
+        <h1 class="search__title">SPACER</h1>
+        <p class="search__description">
+          Begin your journey through our amazing galaxy and discover places you
+          never even heard of.
+        </p>
+        <p class="search__description">Type anything space-related to start</p>
+        <input
+          class="search-value search-value--js"
+          type="text"
+          placeholder="e.g Moon"
+        />
+        <button class="search__button search-button--js">Search</button>
+      </div>
     </div>
     <div class="input input--js">
-      <input class="input-text input-value--js" type="text" placeholder="e.g Moon"/>
-        <button class="input-button input-button--js">Search</button> 
-    </div>  
-    <div class="search__result resluts-list--js">
+      <input
+        class="input-text input-value--js"
+        type="text"
+        placeholder="e.g Moon"
+      />
+      <button class="input-button input-button--js">Search</button>         
+    </div>   
     </div>
-  </body>
+    <div class="search__result resluts-list--js"></div>   
+  </body> 
+  <script>
+    function openModal(id){
+    document.getElementById("modal"+id).style.display = "block";
+    };  
+    function closeModal(id){
+    document.getElementById("modal"+id).style.display = "none";
+    }; 
+  </script>
 </html>

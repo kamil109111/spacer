@@ -2,11 +2,12 @@
 
 .input {  
   display: none;
-  height: 100px;
+  height: 200px;
   font-family: "Montserrat Alternates", sans-serif;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  margin-top: 24px;
   &-text {
     color: black;
     text-align: center;
@@ -26,5 +27,6 @@
   }
   &-button {
     margin-top: 16px;
+    box-shadow: 0 20px 20px -8px rgba(0, 0, 0, 1);
   }
 }

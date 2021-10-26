@@ -29,8 +29,11 @@
     }   
   }
 
-  img {
+  .search__img {
     width: 100% !important;
     height: auto !important;
     padding: 8px;
+    &:hover{      
+      transform: scale(1.1)
   }
+}

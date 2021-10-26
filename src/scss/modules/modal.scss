@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;900&display=swap");
+
+/* The Modal (background) */
+.modal {
+  font-family:"Montserrat Alternates", sans-serif;
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  position: sticky;
+  top: 5%;
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.modal-main {
+  display: flex;
+  flex-direction: row;
+}
+
+.modal-image {
+  max-width: 500px;
+  height: auto;
+  margin-right: 12px;
+  
+}
+
+.modal-text{
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  line-height: normal;
+  max-height: 350px;
+}
+
+.modal-title {
+  color: black;
+ font-size: large;
+}
+
+.modal-description {
+  color: black;
+  font-size: small;
+  overflow: auto; 
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
