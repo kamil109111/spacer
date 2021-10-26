@@ -67,7 +67,7 @@ button.addEventListener("click", () => {
 })
 
 inputButton.addEventListener("click", () => {
-  loader.style.display = "inline-block";
+  
   container.classList.remove("animate__animated", "animate__fadeInUp");
   container.classList.add("animate__animated", "animate__fadeOutDown");
   setTimeout(() => { 
