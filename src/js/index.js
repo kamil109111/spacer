@@ -81,12 +81,30 @@ inputButton.addEventListener("click", () => {
     )
       .then((resp) => resp.json())
       .then((resp) => {
+        let i = 0;
         for (let item of resp.collection.items) {
+          i ++;
           const results = item.links[0].href;
+          const title = item.data[0].title;
+          const description = item.data[0].description;
           const width = getRandomInt(200, 400);
           const heigth = getRandomInt(200, 400);
-          const template = `<img class="search__img" style="width:${width}px; heigth:${heigth}px" src="${results}" />`;
-          container.innerHTML += template;
+          const template = 
+          `
+          <img class="search__img" id="${i}" onclick="openModal(${i})" style="width:${width}px; heigth:${heigth}px" src="${results}"/>
+          <div id="modal${i}"  class="modal modal--js">         
+          <div class="modal-content">                   
+          <span class="close" onclick="closeModal(${i})" >&times;</span>
+          <div class="modal-main">  
+          <img class="modal-image" src="${results}"/>
+          <div class="modal-text">
+          <h1 class="modal-title">${title}</h1> 
+          <p class="modal-description">${description}</p>
+          </div>
+          </div>
+          </div>
+          `;           
+          container.innerHTML += template;          
         }
         container.classList.remove("animate__animated", "animate__fadeOutDown");
         setTimeout(container.classList.add("animate__animated", "animate__fadeInUp"), 2000);        
