@@ -1,4 +1,4 @@
-![cover](https://cotenfrontend.pl/img/cover.png)
+![cover](https://kamil109111.github.io/spacer/cover.png)
 
 # Spacer (Under construction)
 
