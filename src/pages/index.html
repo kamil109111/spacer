@@ -51,14 +51,14 @@
     function openModal(id){
     document.getElementById("modal"+id).style.display = "block";
     document.getElementById("body").style.overflow = "hidden";
-    document.getElementById("input").style.backgroundColor = "rgba(102,102,102)";
+    document.getElementById("input").style.backgroundColor = "rgba(102,102,102)";   
     document.getElementById("input-text").disabled = "true";  
     document.getElementById("input-button").disabled = "true";  
     };  
     function closeModal(id){
     document.getElementById("modal"+id).style.display = "none";
-    document.getElementById("body").style.overflow = "auto";
-    document.getElementById("input").style.backgroundColor = "rgba(255,255,255)";
+    document.getElementById("body").style.overflow = "auto";   
+    document.getElementById("input").style.backgroundColor = "rgba(255,255,255)";  
     document.getElementById("input-text").disabled = false; 
     document.getElementById("input-button").disabled = false;  
     }; 
