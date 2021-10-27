@@ -18,7 +18,7 @@
     />
   </head>
 
-  <body>
+  <body id="body">
     <div class="hero-image hero--js">
       <div class="search">
         <h1 class="search__title">SPACER</h1>
@@ -35,13 +35,14 @@
         <button class="search__button search-button--js">Search</button>
       </div>
     </div>
-    <div class="input input--js">
+    <div class="input input--js" id="input">
       <input
         class="input-text input-value--js"
         type="text"
         placeholder="e.g Moon"
+        id="input-text"
       />
-      <button class="input-button input-button--js">Search</button>         
+      <button class="input-button input-button--js" id="input-button" >Search</button>         
     </div>   
     </div>
     <div class="search__result resluts-list--js"></div>   
@@ -49,9 +50,17 @@
   <script>
     function openModal(id){
     document.getElementById("modal"+id).style.display = "block";
+    document.getElementById("body").style.overflow = "hidden";
+    document.getElementById("input").style.backgroundColor = "rgba(102,102,102)";
+    document.getElementById("input-text").disabled = "true";  
+    document.getElementById("input-button").disabled = "true";  
     };  
     function closeModal(id){
     document.getElementById("modal"+id).style.display = "none";
+    document.getElementById("body").style.overflow = "auto";
+    document.getElementById("input").style.backgroundColor = "rgba(255,255,255)";
+    document.getElementById("input-text").disabled = false; 
+    document.getElementById("input-button").disabled = false;  
     }; 
   </script>
 </html>

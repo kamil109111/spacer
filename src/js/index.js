@@ -67,7 +67,8 @@ button.addEventListener("click", () => {
 })
 
 inputButton.addEventListener("click", () => {
-  
+
+  window.scroll(0,0);
   container.classList.remove("animate__animated", "animate__fadeInUp");
   container.classList.add("animate__animated", "animate__fadeOutDown");
   setTimeout(() => { 
@@ -112,8 +113,7 @@ inputButton.addEventListener("click", () => {
       .catch((error) => {
         console.log("nie udało się pobrać");
       });
-  }
-  setTimeout(() => {loader.style.display = "none";}, 1500);
+  } 
   ;}, 2000);
 });
 
