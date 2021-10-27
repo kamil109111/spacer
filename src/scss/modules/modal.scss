@@ -23,6 +23,9 @@
   padding: 20px;
   border: 1px solid #888;
   width: 80%; /* Could be more or less, depending on screen size */
+  @media (max-width: $tablet) {
+  height: 500px;
+  }
 }
 
 .modal-main {
@@ -31,8 +34,9 @@
   @media (max-width: $tablet) {
     flex-direction: column;
     align-items: center;
+    overflow: auto;
+    height: -webkit-fill-available;
   }
-
 }
 
 .modal-image {
@@ -58,7 +62,11 @@
 .modal-title {
   color: black;
  font-size: large;
+ @media (max-width: $tablet) {
+  text-align: center;
 }
+}
+
 
 .modal-description {
   color: black;
